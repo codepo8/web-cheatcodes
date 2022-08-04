@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Codes for the web - Developer Tools for non-developers</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="modes.css">
+</head>
+<body>
+    <h1>Cheat Codes for the web - Developer Tools for non-developers</h1>
+    <p>This is a demo site to try your browser developer tools skills.</p>
+    <nav>
+        <ul>
+            <li><a href="mobile-version.html">See the document in a mobile view</a></li>
+            <li><a href="overlay.html">Remove annoying overlays</a></li>
+            <li><a href="redirect.html">Avoid unwanted redirects</a></li>
+            <li><a href="video.html">Get a simpler video player</a></li>
+            <li>Get back the context menu</li>
+            <li><a href="modes.html">Check the document in different modes</a></li>
+            <li><a href="all-images.html">Grab all images on the page</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="">on GitHub</a>.</p>
+    </footer>
+<script>
+    document.addEventListener('contextmenu', e => {
+        alert('Copyrighted material, go away now!')
+        e.preventDefault();
+    })
+</script>    
+</body>
+</html>

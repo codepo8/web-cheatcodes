@@ -1,0 +1,21 @@
+body {
+    background: whitesmoke;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1em;
+}
+nav a {
+    color: darkblue;
+}
+h1 {
+    margin: 1em 0;
+    border-bottom: 1px solid grey;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    padding: .2em 0
+}
