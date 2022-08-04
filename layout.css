@@ -1,15 +1,15 @@
 body {
-    background: whitesmoke;
-    color: #333;
+    background: var(--background);
+    color: var(--color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 1em;
 }
 nav a {
-    color: darkblue;
+    color: var(--menulink);
 }
 h1 {
     margin: 1em 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--border);
 }
 nav ul {
     list-style: none;
@@ -20,11 +20,11 @@ nav li {
     padding: .2em 0
 }
 footer {
-    border-top: 1px solid grey;
+    border-top: 1px solid var(--border);
     margin-top: 3em;
     padding: .5em;
     font-size: .8em;
 }
 footer a {
-    color:darkgreen;
+    color:var(--footerlink);
 }

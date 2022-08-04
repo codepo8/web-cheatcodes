@@ -1,0 +1,22 @@
+:root {
+    --background: whitesmoke;
+    --color:#333;
+    --menulink: darkblue;
+    --footerlink:darkgreen;
+    --border: #333;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #111;
+        --color:whitesmoke;
+        --menulink: skyblue;
+        --footerlink:green;
+        --border: white;
+    }
+}
+@media print {
+    body::before {
+        content: 'Printing...';
+        background: red;
+    }
+}
