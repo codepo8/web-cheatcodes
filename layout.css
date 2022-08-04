@@ -19,3 +19,12 @@ nav ul {
 nav li {
     padding: .2em 0
 }
+footer {
+    border-top: 1px solid grey;
+    margin-top: 3em;
+    padding: .5em;
+    font-size: .8em;
+}
+footer a {
+    color:darkgreen;
+}
