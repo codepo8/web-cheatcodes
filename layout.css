@@ -20,7 +20,6 @@ nav li {
     padding: .2em 0
 }
 footer {
-    border-top: 1px solid var(--border);
     margin-top: 3em;
     padding: .5em;
     font-size: .8em;
