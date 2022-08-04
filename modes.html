@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Codes for the web - Developer Tools for non-developers</title>
+    <link rel="stylesheet" href="modes.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        .aardvark {
+            background-image: radial-gradient(circle, #f00, #000);
+            width: 300px;
+            height: 20%;
+            position: fixed;
+            right: 1em;
+            top: 10em;
+            animation: pulse 1s linear infinite both;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3) rotateY(.1turn);
+            }
+            100% {
+                transform: scale(1);
+                rotate: 0deg;
+            }
+        }
+        @media (prefers-reduced-motion) {
+         .aardvark {
+            animation-name: dissolve;
+         }
+        }
+</style>
+</head>
+<body>
+    <h1>Cheat Codes for the web - Developer Tools for non-developers</h1>
+    <p>This is a demo site to try your browser developer tools skills.</p>
+    <nav>
+        <ul id="menu">
+        </ul>
+    </nav>
+    <div class="ad aardvark">Aardvark Supplies Sale!</div>
+    <footer>
+        <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="https://github.com/codepo8/web-cheatcodes">on GitHub</a>.</p>
+    </footer>
+    <script src="nav.js"></script>
+</body>
+</html>

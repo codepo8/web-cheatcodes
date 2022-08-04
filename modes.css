@@ -17,6 +17,15 @@
 @media print {
     body::before {
         content: 'Printing...';
-        background: red;
+    }
+    body {
+        --background: #fff;
+        --color: #000;
+    }
+    a::after {
+        content: " (" attr(href) ") ";
+    }
+    .ad {
+        display: none;
     }
 }
