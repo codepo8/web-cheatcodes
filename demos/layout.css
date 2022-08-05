@@ -11,9 +11,15 @@ h1 {
     margin: 1em 0;
     border-bottom: 1px solid var(--border);
 }
+.article a {
+    color: var(--footerlink);
+}
+summary {
+    margin-bottom: 1em;
+}
 nav ul {
     list-style: none;
-    margin: 0;
+    margin: 1em 0 0 0;
     padding: 0;
 }
 nav li {
