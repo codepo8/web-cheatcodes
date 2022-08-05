@@ -22,19 +22,20 @@ Here are the things we will cover that you should be able to do once you're done
 * Check the document in different modes
 * Grab all images on the page
 
-## Simulating mobile devices
+## See the document in a mobile view
 
 Often the mobile version of a web site is much simpler and has fewer annoying popups, redirects and advertising. Some web sites also only allow content uploads from mobile apps. That's why you can use the browser device emulation to trick the site into thinking that you are using a mobile device.
 
-1. Open Developer Tools by hitting F12
-1. Click the device emulation button
+1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools)
+1. Click the [Device Emulation](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/device-mode/) button
+![Device emulation button](screencasts/device-emulation-button.png)
 1. Select from a different emulated device
 
-On many sites you can now right-click videos and select "save video as". Other sites may have turned off controls, so you can right-click the videos there, and select "show controls" to go to a different part of the video.
+You can try this out and see the difference in [this mobile version demo page](https://codepo8.github.io/web-cheatcodes/mobile-version.html). Where it is a multi step process to see (or download) an image in the normal version of the site, the mobile version simply shows all of them in a larger size.
 
-Another interesting feature of this mode is that you can spoof a different geographical location in the Sensors tool.
+Often the mobile version of the site also has simpler video players. You can then right-click videos and select "save video as" or "show controls" to navigate the video.
 
-You can read up more on [device mode in the official documentation](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/device-mode/).
+Another interesting feature of this mode is that you can [spoof a different geographical location](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#override-geolocation) but most sites will not fall for that and show you content specific to this locale. For that you'd need a VPN.
 
 ## Remove annoying overlays
 
@@ -62,6 +63,15 @@ You can try this in the [example page to block inspection](https://codepo8.githu
 
 That's why it is always a safer bet to first [open the Developer tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools) and pick what you want to change using [the Inspect Tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/inspect) instead.
 
+## Get back the context menu
+
+Others disallow right-clicking any of the elements and access the context menu. You can avoid these annoying redirects by checking the Elements tool and remove so called "Event Handlers".
+
+![](screencasts/context-menu.gif)
+
+## Avoid unwanted redirects
+
+Some of the - let's say fringe content - sites on the web annoy users by adding redirections when you click on them before you can click any of the real content. 
 ## Changing the display mode - print, dark and light
 
 Operating systems have ways to allow users to customise the experience to their needs. You can choose a dark or a light mode, some users even need a high contrast mode to find their way around and others need to have animations turned off. While it is great that you cn do that on a computer level, sometimes you find that the experience offered by a web product in a certain mode isn't what you want. Instead of having to change your operating system settings, you can simulate these environmental changes using developers tools. Another mode that most web sites should have is a print mode. This one is often much simpler than the full design and thus might be easier to consume.
@@ -71,18 +81,6 @@ You can use the Rendering tool of browser developer tools to simulate these diff
 You can also see the print version of any web site without printing it.
 
 And you can switch to reduced motion for sites that have too much animation going on.
-
-## Removing annoying overlays and content
-
-## Removing redirections and turning on context menus
-
-Some of the - let's say fringe content - sites on the web annoy users by adding redirections when you click on them before you can click any of the real content. Others disallow right-clicking any of the elements and access the context menu. You can avoid these annoying redirects by checking the Elements tool and remove so called "Event Handlers".
-
-
-
-
-
-
 
 ## Taking screenshots
 
