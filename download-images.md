@@ -14,10 +14,9 @@ Now, in many cases of sites like these you can use the [Network tool](https://do
 1. Click on any of the images in the list to see a preview of it.
 1. Right-click on the image to be able to copy the image, open it in a new tab or save it.
 
-
 You can see this in action on the demo page in the following recording:
 
-![Recording o how to use the Network tool to download images](screencasts/images-network.gif)
+![Recording of how to use the Network tool to download images](screencasts/images-network.gif)
 
 You can use the Network tool for a lot more things, for example to [get a simpler player control for videos](videoplayer.md).
 

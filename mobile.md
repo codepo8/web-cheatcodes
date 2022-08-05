@@ -1,4 +1,4 @@
-# Get the mobile version of the current document
+# Get     the mobile version of the current document
 
 Often the mobile version of a web site is much simpler and has fewer annoying popups, redirects and advertising. Some web sites also only allow content uploads from mobile apps. That's why you can use the browser device emulation to trick the site into thinking that you are using a mobile device.
 
