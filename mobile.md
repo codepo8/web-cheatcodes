@@ -1,4 +1,4 @@
-## See the document in a mobile view
+# See the document in a mobile view
 
 Often the mobile version of a web site is much simpler and has fewer annoying popups, redirects and advertising. Some web sites also only allow content uploads from mobile apps. That's why you can use the browser device emulation to trick the site into thinking that you are using a mobile device.
 
@@ -12,4 +12,4 @@ Often the mobile version of the site also has simpler video players. You can the
 
 Another interesting feature of this mode is that you can [spoof a different geographical location](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide-chromium/device-mode/#override-geolocation) but most sites will not fall for that and show you content specific to this locale. For that you'd need a VPN.
 
-[More tips here](README.md)
+* [Back to list of all cheat codes](README.md)
