@@ -1,4 +1,4 @@
-# Changing the display mode - print, dark and light
+# Check the document in different modes - print, dark and light
 
 Operating systems have ways to allow users to customise the experience to their needs. You can choose a dark or a light mode, some users even need a high contrast mode to find their way around and others need to have animations turned off. While it is great that you cn do that on a computer level, sometimes you find that the experience offered by a web product in a certain mode isn't what you want. Instead of having to change your operating system settings, you can simulate these environmental changes using developers tools. Another mode that most web sites should have is a print mode. This one is often much simpler than the full design and thus might be easier to consume.
 

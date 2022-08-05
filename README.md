@@ -21,9 +21,5 @@ Here are the tasks and how to do them with browser developer tools:
 * [Get a simpler video player](videoplayer.md)
 * [Check the document in different modes](page-modes.md)
 * [Download images](download-images.md)
-<!-- 
-* [Write your own scripts to access content](scripts.md)
-^ soon!
--->
 
 Do you have some other task you'd like to know how to achieve it? Do you have a recipe you use yourself? Comment in an issue on the [GitHub Repository](https://github.com/codepo8/web-cheatcodes) of this or [ping me on Twitter](https://twitter.com/codepo8).
