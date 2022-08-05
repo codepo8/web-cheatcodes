@@ -6,11 +6,13 @@ What is less OK is if a web site deliberately makes it harder to watch a video b
 
 Take the [demo page of an annoying video embed](https://codepo8.github.io/web-cheatcodes/demos/video.html) for example. I've done my best to make it really annoying to see a video of a sleeping dog.
 
+![Annoying player covering the video](screencasts/dog-video.gif)
+
 Now, in many cases of sites like these you can use the [Network tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/network/) of browser developer tools to get a simpler version of the same video.
 
 1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools) by pressing F12.
 1. If the Network tool isn't avaible yet, press the `+` button, select the `Network` tool and reload the page.
-    ![Opening the network too](screencasts/open-network.gif)
+    ![Opening the network tool](screencasts/open-network.gif)
 1. The Network Tool now shows all the content that was and is still being loaded
     ![Network showing all the page resources loading](screencasts/network-loading.gif)
 1. Click the `Media` option to filter the list to only see movie files

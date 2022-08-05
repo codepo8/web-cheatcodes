@@ -25,7 +25,7 @@
     a::after {
         content: " (" attr(href) ") ";
     }
-    .ad {
+    div {
         display: none;
     }
 }
