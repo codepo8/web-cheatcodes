@@ -1,9 +1,10 @@
-# See the document in a mobile view
+# Get the mobile version of the current document
 
 Often the mobile version of a web site is much simpler and has fewer annoying popups, redirects and advertising. Some web sites also only allow content uploads from mobile apps. That's why you can use the browser device emulation to trick the site into thinking that you are using a mobile device.
 
-1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools)
+1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools) by pressing F12.
 1. Click the [device emulation](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/device-mode/) button
+    ![Device Emulation button](screencasts/device-emulation-button.png)
 1. Select from a different emulated device
 
 You can try this out and see the difference in [this mobile version demo page](https://codepo8.github.io/web-cheatcodes/mobile-version.html). Where it is a multi step process to see (or download) an image in the normal version of the site, the mobile version simply shows all of them in a larger size.

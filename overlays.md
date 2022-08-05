@@ -6,9 +6,10 @@ Here's how to get rid of overlays using the browser developer tools. You can try
 
 ![Screencast showing how to remove the overlay](screencasts/overlays.gif)
 
-1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools)
-1. Use the [Inspect Tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/inspect) to pick an element of the page
-1. Move your mouse around until the colour overlay shows that the element covers the whole page
+1. [Open Developer Tools](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/overview#open-devtools) by pressing F12.
+1. Use the [Inspect Tool](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/css/inspect) by clicking the pointer icon to pick an element of the page
+    ![The Inspect tool button](screencasts/pointer.png)
+1. Move your mouse around the document until the colour overlay shows that the element covers the whole page
 1. Click your mouse and the element will get highlighted in the Elements tool.
 1. Press `Delete` to remove it
 
