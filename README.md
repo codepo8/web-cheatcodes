@@ -14,12 +14,12 @@ Here are the tasks and how to do them with browser developer tools:
 
 * [Get the mobile version of the current document](mobile.md)
 * [Remove annoying overlays and page elements](overlays.md)
-* [Inspect the uninspectable](inspect.md)
+* [Inspect the uninspectable](inspect-no-context.md)
 * [Get back the context menu](context-menu.md)
 * [Avoid unwanted redirects](remove-redirects.md)
 * [Take screenshots of web content](screenshots.md)
 * [Get a simpler video player](videoplayer.md)
-* [Check the document in different modes](modes.md)
+* [Check the document in different modes](page-modes.md)
 * [Download images and videos](download-images.md)
 * [Write your own scripts to access content](scripts.md)
 
