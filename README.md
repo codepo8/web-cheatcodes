@@ -12,15 +12,15 @@ Now I will show you how you can use the browser developer tools to work around s
 
 Here are the tasks and how to do them with browser developer tools:
 
-* [See the document in a mobile view](mobile.md)
-* [Remove annoying overlays](overlays.md)
+* [Get the mobile version of the current document](mobile.md)
+* [Remove annoying overlays and page elements](overlays.md)
 * [Inspect the uninspectable](inspect.md)
-* [Get back the context menu](contextmenu.md)
+* [Get back the context menu](context-menu.md)
 * [Avoid unwanted redirects](remove-redirects.md)
 * [Take screenshots of web content](screenshots.md)
 * [Get a simpler video player](videoplayer.md)
 * [Check the document in different modes](modes.md)
 * [Download images and videos](download-images.md)
-* [Write your own scripts to access content][scripts.md]
+* [Write your own scripts to access content](scripts.md)
 
 Do you have some other task you'd like to know how to achieve it? Do you have a recipe you use yourself? Comment in an issue on the [GitHub Repository](https://github.com/codepo8/web-cheatcodes) of this or [ping me on Twitter](https://twitter.com/codepo8).
