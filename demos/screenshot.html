@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="modes.css">
     <style>
         .aardvark {
-            background-image: radial-gradient(circle, rgb(72, 255, 0), #000);
             color: black;
             display: flex;
             flex-direction: column;
@@ -16,24 +15,11 @@
             justify-content: space-around;
             text-align: center;
             vertical-align: middle;
-            animation: pulse 1s linear infinite both;
-                }
-        @keyframes pulse {
-            0% {
-                transform: scale(0.7);
-            }
-            50% {
-                transform: scale(1) rotateY(.1turn);
-            }
-            100% {
-                transform: scale(0.7);
-            }
+            background: yellow;
+            font-size: 3em;
+            font-family: "Comic Sans MS", cursive, sans-serif;
         }
-        @media (prefers-reduced-motion) {
-         .aardvark {
-            animation-name: dissolve;
-         }
-        }
+
         .grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
