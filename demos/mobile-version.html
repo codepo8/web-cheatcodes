@@ -83,6 +83,9 @@
     <script>
         if (window.matchMedia('(min-width: 1000px) and (pointer: fine)').matches) {
             let gallery = document.querySelector('#gallery');
+            gallery.addEventListener('contextmenu', e => {
+                e.preventDefault();
+            })
             let fullimage = document.querySelector('#fullimage');
             let images = gallery.querySelectorAll('a');
             let now = 0;
