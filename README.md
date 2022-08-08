@@ -1,14 +1,28 @@
-# Cheat codes for the web - browser developer tools for non-developers
+# Cheat codes for the web
 
-Every browser these days comes with built-in developer tools that help people create, test and fix products for the web. You can right-click any website and select `Inspect` to get to them, press `F12` or `CMD + Shift + I on Mac` or `Ctrl + Shift + I` on Windows/Linux. I work on these tools as a product manager and daily I get about 20 - 30 feedback messages that people opened them accidentally and are sure they "have been hacked".
+## Browser developer tools for non-developers
 
-I get it - to non developers these tools look daunting and complex and all the errors they display can be intimidating and worrying. And that annoys me. Tooling for the web to me shouldn't be only a thing for experts. On the contrary - the more you use these tools, the more you should become an expert of the web. 
+Every browser these days comes with built-in developer tools that help people create, test and fix products for the web. You can right-click any website and select `Inspect` to get to them, press `F12` or `CMD + Shift + I on Mac` or `Ctrl + Shift + I` on Windows/Linux. 
 
-This is why I put together this collection with demonstrations for you to see what developer tools can be: **your cheat codes for the web**.
+![The Developer Tools open in Microsoft Edge](screencasts/browser-tools.png)
 
-When I look at the web as a whole and especially, let's call them "fringe content" web sites, I am disappointed at how we use this medium. Instead of giving people content they came for, we smother intrusive ads all over, we prevent people from using the context menu which is full of accessibility enhancing tools and we make people jump through hoops just to get to some content they found in a search engine.
+These tools are for developers, but they can also help you to fix some annoyances of the web. This here is a collection of ways to make the web less annoying for you by using these tools. 
 
-Now I will show you how you can use the browser developer tools to work around some of these annoyances. As the browser of choice I use Microsoft Edge, because it comes for free on any Windows machine, is available for all other platforms, and I work on it. You're free to use whatever you want, and most of the functionality should also be available in other browsers. 
+I work on these tools as a product manager and daily I get about 20 - 30 feedback messages that people opened them accidentally and are sure they "have been hacked".
+
+I get it - to non developers these tools look daunting and complex and all the errors they display can be intimidating and worrying. And that annoys me. Tooling for the web shouldn't require you to be an expert. On the contrary - the more you use these tools, the more you should become an expert of the web. 
+
+> This is why I put together this collection with demonstrations for you to see what developer tools can be: **your cheat codes for the web**.
+
+When I look at the web as a whole and especially, let's call them "fringe content" web sites, I am disappointed at how we use this medium. Instead of giving people content they came for, we smother intrusive ads all over, prevent people from using the context menu which is full of accessibility enhancing tools and make people jump through hoops just to get to some content they found in a search engine.
+
+Now I will show you how you can use the browser developer tools to work around some of these annoyances. 
+
+> As the browser of choice I use Microsoft Edge, because it comes for free on any Windows machine, is available for all other platforms, and I work on it. You're free to use whatever you want, and most of the functionality should also be available in other browsers. 
+
+Another important reminder is that you are not doing anything illegal here nor can you get traced by the products you change to your needs.
+
+> Everything you do in these tools happens on your computer. You do not change the live product and if you reload it, your changes are gone, too.
 
 Here are the tasks and how to do them with browser developer tools:
 
