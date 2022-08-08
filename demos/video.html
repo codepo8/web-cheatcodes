@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="modes.css">
     <link rel="stylesheet" href="layout.css">
     <style>
+        @media (pointer: coarse) {
+            video {
+                height: 100%;
+                width: 100%;
+                object-fit: scale-down;
+                display: block;
+            }
+            #movie button, #movie div {
+                display: none;
+            }
+        }   
+        @media (pointer: fine) {
+
         #movie {
             position: fixed;
             overflow: hidden;
@@ -73,6 +86,7 @@
                 top: -100px;
                 transition: 2s;
             }        
+    }
     </style>
 </head>
 <body>
@@ -91,15 +105,18 @@
         <button>
             <p>Click to play!</p>
             <p>Don't forget to subscribe</p></button>
-        <video src="https://christianheilmann.com/wp-content/uploads/2022/08/sleeping-dog.mp4"></video></div>
+        <video controls src="https://christianheilmann.com/wp-content/uploads/2022/08/sleeping-dog.mp4"></video></div>
     <footer>
         <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="https://github.com/codepo8/web-cheatcodes">on GitHub</a>.</p>
     </footer>
     <script src="nav.js"></script>
     <script>
+        if (window.matchMedia('(pointer: fine)').matches) {
         let but = document.querySelector('button');
         let container = document.querySelector('#movie');
         let video = document.querySelector('video');
+        video.controls = false;
+        console.loG('x')
         document.querySelector('button').addEventListener('click', e => {
             container.classList.toggle('play');
             if (container.classList.contains('play')) {
@@ -108,6 +125,7 @@
                 video.pause();
             }
         });
+        } 
     </script>
 </body>
 </html>
