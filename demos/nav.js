@@ -4,7 +4,7 @@ let urls = [
     {u:"inspect.html",t: "Inspect the uninspectable"},
     {u:"contextmenu.html",t: "Get back the context menu"},
     {u:"redirect.html",t: "Avoid unwanted redirects"},
-    {u:"screenshots.html",t: "Take screenshots of web content"},
+    {u:"screenshot.html",t: "Take screenshots of web content"},
     {u:"video.html",t: "Get a simpler video player"},
     {u:"modes.html",t: "Check the document in different modes"},
     {u:"all-images.html",t: "Grab all images on the page"}
