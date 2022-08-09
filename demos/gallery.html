@@ -12,70 +12,106 @@
             margin:0;
             padding:0;
             margin-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .double {
+            grid-column: span 2;
+        }
+        .doubleh {
+            grid-row: span 2;
         }
         #gallery img {
-            width: 20%;
-        }
-        #display {
-            position: fixed;
-            top: 8em;
-            left: 25%;
-            right: 1em;
-            bottom: 6em;
-        }
-        #display img[src^="img"] {
             height: 100%;
             width: 100%;
-            object-fit: scale-down;
+            object-fit: cover;
             display: block;
         }
-        #display img {
-            display: none;
+        #gallery li {
+            font-size: 1.3em;
         }
+        .ad {
+            background-image: radial-gradient(circle, #369, #000);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: space-around;
+        }
+        #gallery ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: .8em;
+        }
+        .more h2 {
+            font-size: 1em;
+        }
+        .more a {
+            border: 1px solid #fff;
+            background: rgb(16, 123, 137);
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+            margin-bottom:.5em;
+        }
+
     </style>
 </head>
 <body>
     <h1>Cheat Codes for the web - Developer Tools for non-developers</h1>
     <p>This is a demo site to try your browser developer tools skills.</p>
-    <nav>
-        <ul id="menu">
-        </ul>
-    </nav>
+    <details>
+        <summary>More demo pages</summary>
+        <nav>
+            <ul id="menu">
+            </ul>
+        </nav>
+    </details>
     <ul id="gallery">
-        <li><a class="full-link" href="img/husky-bed.jpg"><img src="img/smaller/thumb-husky-bed.jpg" loading="lazy" alt="Husky in bed"></a></li>
-        <li><a class="full-link" href="img/husky-cuddles.jpg"><img src="img/smaller/thumb-husky-cuddles.jpg" loading="lazy" alt="Husky being cuddled"></a></li>
-        <li><a class="full-link" href="img/larry-ball.jpg"><img src="img/smaller/thumb-larry-ball.jpg" loading="lazy" alt="Cocker Spaniel with ball"></a></li>
         <li><a class="full-link" href="img/larry-kitchen.jpg"><img src="img/smaller/thumb-larry-kitchen.jpg" loading="lazy" alt="Cocker Spaniel in Kitchen"></a></li>
-        <li><a class="full-link" href="img/larry-raincoat.jpg"><img src="img/smaller/thumb-larry-raincoat.jpg" loading="lazy" alt="Cocker Spaniel wearing Raincoat"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li class="ad">Capybara slippers sale!</li>
         <li><a class="full-link" href="img/larry-sleeping-on-sofa.jpg"><img src="img/smaller/thumb-larry-sleeping-on-sofa.jpg" loading="lazy" alt="Cocker Spaniel on sofa"></a></li>
-        <li><a class="full-link" href="img/larry-sleeping.jpg"><img src="img/smaller/thumb-larry-sleeping.jpg" loading="lazy" alt="Sleeping Cocker spaniel"></a></li>
-        <li><a class="full-link" href="img/socke-looking.jpg"><img src="img/smaller/thumb-socke-looking.jpg" loading="lazy" alt="Dog looking at camera"></a></li>
-        <li><a class="full-link" href="img/socke-with-ball.jpg"><img src="img/smaller/thumb-socke-with-ball.jpg" loading="lazy" alt="Dog with ball"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti commodi incidunt illo, saepe sunt repellat?</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li class="doubleh">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/husky-cuddles.jpg"><img src="img/smaller/thumb-husky-cuddles.jpg" loading="lazy" alt="Husky being cuddled"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li class="more">            
+            <h2>Pointless "More" Links</h2>
+            <ul class="more">
+                <li><a href="#">Lorem ipsum</a></li>
+                <li><a href="#">Dolor sit amet</a></li>
+                <li><a href="#">Consectetur adipisicing</a></li>
+                <li><a href="#">Similique pariatur ipsa</a></li>
+                <li><a href="#">Deserunt rem porro</a></li>
+            </ul>
+        </li>
         <li><a class="full-link" href="img/socke.jpg"><img src="img/smaller/thumb-socke.jpg" loading="lazy" alt="Dog"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/larry-sleeping.jpg"><img src="img/smaller/thumb-larry-sleeping.jpg" loading="lazy" alt="Sleeping Cocker spaniel"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li class="double">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/larry-ball.jpg"><img src="img/smaller/thumb-larry-ball.jpg" loading="lazy" alt="Cocker Spaniel with ball"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li class="ad">Axolotl enhancements</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/husky-bed.jpg"><img src="img/smaller/thumb-husky-bed.jpg" loading="lazy" alt="Husky in bed"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/socke-looking.jpg"><img src="img/smaller/thumb-socke-looking.jpg" loading="lazy" alt="Dog looking at camera"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/larry-raincoat.jpg"><img src="img/smaller/thumb-larry-raincoat.jpg" loading="lazy" alt="Cocker Spaniel wearing Raincoat"></a></li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
+        <li><a class="full-link" href="img/socke-with-ball.jpg"><img src="img/smaller/thumb-socke-with-ball.jpg" loading="lazy" alt="Dog with ball"></a></li>
+        <li  class="ad">Wombat Winter Sale</li>
+        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nostrum numquam sequi reiciendis iste illum officiis fuga corrupti dolores voluptatem et cupiditate unde, repudiandae commodi incidunt illo, saepe sunt repellat?</li>
     </ul>
     <div id="display"><img id="fullimage"></div>    
     <footer>
         <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="https://github.com/codepo8/web-cheatcodes">on GitHub</a>.</p>
     </footer>
-    <script>
-            let gallery = document.querySelector('#gallery');
-            let fullimage = document.querySelector('#fullimage');
-            let images = gallery.querySelectorAll('a');
-            let now = 0;
-            let nowImage = images[now];
-            let nowImageSrc = nowImage.getAttribute('href');
-            for (let i = 0; i < images.length; i++) {
-                images[i].addEventListener('click', function(e) {
-                    e.preventDefault();
-                    nowImageSrc = this.getAttribute('href');
-                    fullimage.setAttribute('src', nowImageSrc);
-                });
-            }
-            document.querySelector('#display').addEventListener('click', function(e) {
-                e.preventDefault();
-                fullimage.setAttribute('src', '');
-            });
-    </script>
     <script src="nav.js"></script>
 </body>
 </html>
