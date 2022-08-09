@@ -1,13 +1,13 @@
 let urls = [
-    {u:"mobile-version.html",t: "See the document in a mobile view"},
     {u:"overlay.html",t: "Remove annoying overlays"},
+    {u:"screenshot.html",t: "Take screenshots of web content"},
     {u:"inspect.html",t: "Inspect the uninspectable"},
     {u:"contextmenu.html",t: "Get back the context menu"},
     {u:"redirect.html",t: "Avoid unwanted redirects"},
-    {u:"screenshot.html",t: "Take screenshots of web content"},
     {u:"video.html",t: "Get a simpler video player"},
-    {u:"modes.html",t: "Check the document in different modes"},
-    {u:"all-images.html",t: "Grab all images on the page"}
+    {u:"all-images.html",t: "Grab all images on the page"},
+    {u:"mobile-version.html",t: "See the document in a mobile view"},
+    {u:"modes.html",t: "Check the document in different modes"}
 ];
 
 let current = document.location.href.split('/').pop();
