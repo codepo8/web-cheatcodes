@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Codes for the web - Developer Tools for non-developers</title>
+    <link rel="stylesheet" href="modes.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        button {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            font-family: inherit;
+            padding: .5em 1em;
+            margin: 0 auto;
+            max-width: 15em;
+            display: inline-block;
+            background: linear-gradient(to top,dodgerblue,white);
+            border: 2px solid dodgerblue;
+            color: black;
+        }
+        button:disabled {
+            background: #eee;
+            color: #999;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cheat Codes for the web - Developer Tools for non-developers</h1>
+    <p>This is a demo site to try your browser developer tools skills.</p>
+    <p class="article"><a href="../timed-buttons.md">Read the explanatory article</a></p>
+    <details>
+        <summary>More demo pages</summary>
+        <nav>
+            <ul id="menu">
+            </ul>
+        </nav>
+    </details>
+    <button disabled>Please wait 30 seconds…</button>
+    <script>
+        let but = document.querySelector('button');
+        let secs = 30;
+        let step = _ => {
+            but.innerText = `Please wait ${secs} second${secs === 1 ? '' : 's'}…`;
+            secs--;
+            if (secs > 0) {
+                window.setTimeout(step, 1000);
+            } else {
+                but.disabled = false;
+                but.innerText = 'Click to download';
+            }
+        }
+        window.setTimeout(step, 1000);
+        but.addEventListener('click', e => {
+            e.preventDefault();
+            alert('You clicked the button, you win the game!')
+        })
+    </script>    
+    <footer>
+        <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="https://github.com/codepo8/web-cheatcodes">on GitHub</a>.</p>
+    </footer>
+    <script src="nav.js"></script>
+</body>
+</html>
