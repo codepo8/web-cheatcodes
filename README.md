@@ -35,5 +35,6 @@ Here are the tasks and how to do them with browser developer tools:
 * [Download images](download-images.md)
 * [Get the mobile version of the current document](mobile.md)
 * [Check the document in different modes](page-modes.md)
+* [Making timed buttons work without waiting](timed-buttons.md)
 
 Do you have some other task you'd like to know how to achieve it? Do you have a recipe you use yourself? Comment in an issue on the [GitHub Repository](https://github.com/codepo8/web-cheatcodes) of this or [ping me on Twitter](https://twitter.com/codepo8).

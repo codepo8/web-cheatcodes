@@ -7,7 +7,8 @@ let urls = [
     {u:"video.html",t: "Get a simpler video player"},
     {u:"all-images.html",t: "Grab all images on the page"},
     {u:"mobile-version.html",t: "See the document in a mobile view"},
-    {u:"modes.html",t: "Check the document in different modes"}
+    {u:"modes.html",t: "Check the document in different modes"},
+    {u:"timed-button.html",t: "Making timed buttons work without waiting"}
 ];
 
 let current = document.location.href.split('/').pop();
