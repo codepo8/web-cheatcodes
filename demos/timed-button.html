@@ -37,10 +37,10 @@
             </ul>
         </nav>
     </details>
-    <button disabled>Please wait 30 seconds…</button>
+    <button disabled>Please wait 120 seconds…</button>
     <script>
         let but = document.querySelector('button');
-        let secs = 30;
+        let secs = 120;
         let step = _ => {
             but.innerText = `Please wait ${secs} second${secs === 1 ? '' : 's'}…`;
             secs--;
