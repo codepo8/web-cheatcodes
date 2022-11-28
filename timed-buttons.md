@@ -11,6 +11,7 @@ Here's how to get rid of overlays using the browser developer tools. You can try
 1. Click your mouse and the element will get highlighted in the Elements tool.
 1. Double click on the `disabled` attribute of the button element
 1. Press `Delete` to remove it
+1. You should be able to press the button nown
 
 You can see it in action in this recording:
 
