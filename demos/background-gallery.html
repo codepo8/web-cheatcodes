@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilder als Hintergrund</title>
+    <link rel="stylesheet" href="modes.css">
+    <link rel="stylesheet" href="layout.css">
+    <style>
+        #gallery {
+            list-style: none;
+            margin: 0;
+            padding: 1em;
+            margin-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+            gap: 20px;
+        }
+        .double {
+            grid-column: span 2;
+        }
+        .doubleh {
+            grid-row: span 2;
+        }
+        .img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: 400ms;
+        }
+        #gallery li:hover {
+            transform: scale(1.1);
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        #gallery li {
+            font-size: 1.3em;
+            height: 20vw; 
+            width: 20vw; 
+            border-radius: 50% 50%;
+            border: 1vw solid white;
+        }
+        .ad {
+            /* background-image: radial-gradient(circle, #369, #000); */
+            background:radial-gradient(circle at 90% 10%, lime 0 5%, transparent 5% 100%),linear-gradient(135deg, rgb(4, 67, 85) 0% 20%, rgb(46, 66, 122) 20% 40%, rgb(54 95 166) 40% 60%, rgb(46, 66, 122) 60% 80%, rgb(4, 67, 85) 80% 100%);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            justify-content: space-around;
+        }
+        .ad::after {
+            content: 'AD';
+            position: absolute;
+            top: 7%;
+            right: 7%;
+            font-size: 12px;
+            color: black;
+        }
+        #gallery ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: .8em;
+        }
+        .more h2 {
+            font-size: 1em;
+        }
+        .more a {
+            border: 1px solid #fff;
+            background: rgb(16, 123, 137);
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 5px;
+            margin-bottom:.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <ul id="gallery">
+    </ul>
+    <nav><ul></ul></nav>
+    <script>
+        const gal = document.querySelector('#gallery');
+        let imgs = ['img/husky-cuddles-500px.jpg', 'img/socke-500px.jpg', 'img/larry-sleeping-500px.jpg', 'img/larry-ball-500px.jpg', 'img/husky-bed-500px.jpg', 'img/socke-looking-500px.jpg', 'img/larry-raincoat-500px.jpg', 'img/socke-with-ball-500px.jpg'];
+        let out = '';
+        imgs.forEach(img => {
+            out += `<li class="img" style="background-image:url(${img})"></li>`;
+        })
+        gal.innerHTML = out;
+    </script>
+    <script src="nav.js"></script>
+</body>
+</html>

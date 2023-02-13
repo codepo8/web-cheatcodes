@@ -4,6 +4,8 @@
     --menulink: darkblue;
     --footerlink:darkgreen;
     --border: #333;
+    --navbg: #eee;
+    --navborder: #666;
 }
 @media (prefers-color-scheme: dark) {
     :root {
@@ -12,7 +14,9 @@
         --menulink: skyblue;
         --footerlink:green;
         --border: white;
-    }
+        --navbg: #222;
+        --navborder: #ccc;
+        }
 }
 @media print {
     body::before {

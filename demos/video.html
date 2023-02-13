@@ -21,16 +21,13 @@
         @media (pointer: fine) {
 
         #movie {
-            position: fixed;
             overflow: hidden;
-            top: 8em;
-            right: 1em;
-            left: 30em;
-            bottom: 6em;
+            position: relative;
             max-width: 960px;
             aspect-ratio: 16/9;
             background: var(--background);
             display: flex;
+            margin: 0 auto;
         }
         video {
             height: 100%;
@@ -90,28 +87,17 @@
     </style>
 </head>
 <body>
-    <h1>Cheat Codes for the web - Developer Tools for non-developers</h1>
-    <p>This is a demo site to try your browser developer tools skills.</p>
-    <p class="article"><a href="../videoplayer">Read the explanatory article</a></p>
-    <details>
-        <summary>More demo pages</summary>
-        <nav>
-            <ul id="menu">
-            </ul>
-        </nav>
-    </details>
     <div id="movie">
-        <div>Buy some stuff!</div>
+        <div>Mehr Angebote</div>
         <button>
-            <p>Click to play!</p>
-            <p>Don't forget to subscribe</p></button>
+            <p>Zum Anschauen Anklicken!</p>
+            <p>Vollversion für subscriber!</p></button>
         <video controls src="https://christianheilmann.com/wp-content/uploads/2022/08/sleeping-dog.mp4"></video></div>
-    <footer>
-        <p>Written by <a href="https://christianheilmann.com">Chris Heilmann</a>, feedback welcome <a href="https://github.com/codepo8/web-cheatcodes">on GitHub</a>.</p>
-    </footer>
-    <script src="nav.js"></script>
-    <script>
+        <nav><ul></ul></nav>
+        <script src="nav.js"></script>
+        <script>
         if (window.matchMedia('(pointer: fine)').matches) {
+            console.log('x')
         let but = document.querySelector('button');
         let container = document.querySelector('#movie');
         let video = document.querySelector('video');
